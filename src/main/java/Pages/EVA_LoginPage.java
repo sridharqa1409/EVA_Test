@@ -23,9 +23,9 @@ public class EVA_LoginPage extends TestBase {
 
 	}
 
-	public void login() {
-		Email.sendKeys("sridhar.moddu@fastcollab.com");
-		Password.sendKeys("Myadmin@123");
+	public void login(String username, String password) {
+		Email.sendKeys(username);
+		Password.sendKeys(password);
 		LoginBtn.click();
 	}
 
