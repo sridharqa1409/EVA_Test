@@ -18,7 +18,7 @@ public class EVA_LoginPageTest extends TestBase{
 		initBrowserAndGotoUrl("https://aq5z5o4vcj.execute-api.ap-south-1.amazonaws.com/production/login");
 		LoginPage = new EVA_LoginPage(); 
 	}
-
+	
 	
 	@Test(priority=1)
 	public void loginTest() {
