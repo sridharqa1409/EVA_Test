@@ -49,7 +49,7 @@ public class EVA_LoginPageTest extends TestBase {
 	}
 
 	@Test(priority = 1, dataProvider = "getTestData")
-	public void loginTest_Negitive(String Username, String Password) throws InterruptedException {
+	public void loginTest_Negative(String Username, String Password) throws InterruptedException {
 
 		LoginPage.login(Username, Password);
 		
