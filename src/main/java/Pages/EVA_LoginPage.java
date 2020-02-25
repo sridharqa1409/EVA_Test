@@ -17,16 +17,23 @@ public class EVA_LoginPage extends TestBase {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement LoginBtn;
 
+	
+	@FindBy(xpath = "//h5[text()='Flights']")
+	WebElement flightlogo;
 	public EVA_LoginPage() {
 
 		PageFactory.initElements(driver, this);
 
 	}
 
-	public void login(String username, String password) {
+	public WebElement login(String username, String password) throws InterruptedException {
 		Email.sendKeys(username);
 		Password.sendKeys(password);
 		LoginBtn.click();
+		Thread.sleep(3000);
+		return flightlogo;
+		
+	
 	}
 
 }

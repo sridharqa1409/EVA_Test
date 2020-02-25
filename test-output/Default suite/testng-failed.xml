@@ -7,8 +7,7 @@
         <methods>
           <include name="SetUp"/>
           <include name="teardown"/>
-          <include name="teardown2"/>
-          <include name="loginTest"/>
+          <include name="loginTest" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- Tests.EVA_LoginPageTest -->
     </classes>

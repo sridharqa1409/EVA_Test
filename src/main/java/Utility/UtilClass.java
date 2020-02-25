@@ -1,5 +1,7 @@
 package Utility;
 
-public class UtilClass {
+import TestBase.TestBase;
+
+public class UtilClass extends TestBase {
 
 }
