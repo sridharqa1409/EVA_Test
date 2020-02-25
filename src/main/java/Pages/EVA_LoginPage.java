@@ -20,7 +20,13 @@ public class EVA_LoginPage extends TestBase {
 	
 	@FindBy(xpath = "//h5[text()='Flights']")
 	WebElement flightlogo;
-	public EVA_LoginPage() {
+	
+	@FindBy(xpath="//input[@id='oneway']")
+	WebElement oneway;
+	
+	public EVA_LoginPage() 
+	
+	{
 
 		PageFactory.initElements(driver, this);
 
@@ -32,8 +38,15 @@ public class EVA_LoginPage extends TestBase {
 		LoginBtn.click();
 		Thread.sleep(3000);
 		return flightlogo;
-		
 	
+	}
+	
+	public WebElement defaultpage() throws InterruptedException {
+		
+		Thread.sleep(3000);
+		
+		return oneway;
+		
 	}
 
 }

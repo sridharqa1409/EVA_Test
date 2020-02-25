@@ -48,17 +48,17 @@ public class EVA_LoginPageTest extends TestBase {
 
 	}
 
-	@Test(priority = 1, dataProvider = "getTestData")
+	@Test(enabled = false, priority = 1, dataProvider = "getTestData")
 	public void loginTest_Negative(String Username, String Password) throws InterruptedException {
 
 		LoginPage.login(Username, Password);
-		
+
 		String ActUrl = property.getProperty("Url");
 
 		String ExpUrl = driver.getCurrentUrl();
 
 		Assert.assertEquals(ActUrl, ExpUrl);
-		
+
 		Thread.sleep(3000);
 
 	}
@@ -71,8 +71,14 @@ public class EVA_LoginPageTest extends TestBase {
 		Thread.sleep(2000);
 
 		Assert.assertTrue(ele.isDisplayed());
+		
+		WebElement dft = LoginPage.defaultpage();
+
+		Assert.assertTrue(dft.isSelected());
 
 	}
+
+	
 
 	@AfterMethod
 	public void teardown() {

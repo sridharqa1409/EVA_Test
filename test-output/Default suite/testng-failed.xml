@@ -5,9 +5,9 @@
     <classes>
       <class name="Tests.EVA_LoginPageTest">
         <methods>
+          <include name="loginTest_Positive"/>
           <include name="SetUp"/>
           <include name="teardown"/>
-          <include name="loginTest" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
       </class> <!-- Tests.EVA_LoginPageTest -->
     </classes>
