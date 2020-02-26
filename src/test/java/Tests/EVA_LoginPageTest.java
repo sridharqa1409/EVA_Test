@@ -1,5 +1,7 @@
 package Tests;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -18,6 +20,7 @@ public class EVA_LoginPageTest extends TestBase {
 	public void SetUp() {
 
 		initBrowserAndGotoUrl(property.getProperty("Url"));
+		driver.manage().timeouts().pageLoadTimeout(30L, TimeUnit.SECONDS);
 		LoginPage = new EVA_LoginPage();
 	}
 
@@ -66,6 +69,7 @@ public class EVA_LoginPageTest extends TestBase {
 	@Test(priority = 2)
 	public void loginTest_Positive() throws InterruptedException {
 
+		
 		WebElement ele = LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
 
 		Thread.sleep(2000);

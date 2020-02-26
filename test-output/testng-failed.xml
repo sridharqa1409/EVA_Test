@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.EVA_LoginPageTest">
+      <class name="Tests.EVA_FlightsPageTest">
         <methods>
-          <include name="loginTest_Positive"/>
+          <include name="tear"/>
+          <include name="defaultselection"/>
+          <include name="searchFrom"/>
           <include name="SetUp"/>
-          <include name="teardown"/>
         </methods>
-      </class> <!-- Tests.EVA_LoginPageTest -->
+      </class> <!-- Tests.EVA_FlightsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
