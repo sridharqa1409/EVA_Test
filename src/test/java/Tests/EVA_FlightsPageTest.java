@@ -1,8 +1,8 @@
 package Tests;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Pages.EVA_FlightsPage;
@@ -21,7 +21,7 @@ public class EVA_FlightsPageTest extends TestBase {
 	}
 	
 
-	@BeforeMethod
+	@BeforeClass
 	public void SetUp() throws InterruptedException {
 
 		initBrowserAndGotoUrl(property.getProperty("Url"));
@@ -42,13 +42,21 @@ public class EVA_FlightsPageTest extends TestBase {
 	
 	@Test(priority = 2)
 	public void searchFrom() throws InterruptedException {
-		LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
+		//LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
 		Thread.sleep(1000);
-		FlightsPage.searchFlight("ben","Bengaluru");
+		FlightsPage.searchFromFlight("che","Chennai");
+		
+	}
+	
+	@Test(priority = 3)
+	public void searchTo() throws InterruptedException {
+		//LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
+		Thread.sleep(1000);
+		FlightsPage.searchToFlight("del","New Delhi");
 		
 	}
 
-	@AfterMethod
+	@AfterClass
 	public void tear() {
 
 		driver.close();
