@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-26T09:50:57Z" name="Default suite" finished-at="2020-02-26T09:51:42Z" duration-ms="45132">
+  <suite started-at="2020-02-26T12:04:19Z" name="Default suite" finished-at="2020-02-26T12:04:52Z" duration-ms="32747">
     <groups>
     </groups>
-    <test started-at="2020-02-26T09:50:57Z" name="Default test" finished-at="2020-02-26T09:51:42Z" duration-ms="45132">
+    <test started-at="2020-02-26T12:04:19Z" name="Default test" finished-at="2020-02-26T12:04:52Z" duration-ms="32747">
       <class name="Tests.EVA_FlightsPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_FlightsPageTest@69930714]" started-at="2020-02-26T09:50:57Z" name="SetUp" finished-at="2020-02-26T09:51:13Z" duration-ms="16297" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_FlightsPageTest@11dc3715]" started-at="2020-02-26T12:04:19Z" name="SetUp" finished-at="2020-02-26T12:04:34Z" duration-ms="15327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="defaultselection()[pri:1, instance:Tests.EVA_FlightsPageTest@69930714]" started-at="2020-02-26T09:51:13Z" name="defaultselection" finished-at="2020-02-26T09:51:17Z" duration-ms="3869" status="PASS">
+        <test-method signature="defaultselection()[pri:1, instance:Tests.EVA_FlightsPageTest@11dc3715]" started-at="2020-02-26T12:04:34Z" name="defaultselection" finished-at="2020-02-26T12:04:38Z" duration-ms="3884" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- defaultselection -->
-        <test-method is-config="true" signature="tear()[pri:0, instance:Tests.EVA_FlightsPageTest@69930714]" started-at="2020-02-26T09:51:17Z" name="tear" finished-at="2020-02-26T09:51:17Z" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_FlightsPageTest@69930714]" started-at="2020-02-26T09:51:17Z" name="SetUp" finished-at="2020-02-26T09:51:32Z" duration-ms="14851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="searchFrom()[pri:2, instance:Tests.EVA_FlightsPageTest@69930714]" started-at="2020-02-26T09:51:32Z" name="searchFrom" finished-at="2020-02-26T09:51:42Z" duration-ms="9930" status="PASS">
+        <test-method signature="searchFrom()[pri:2, instance:Tests.EVA_FlightsPageTest@11dc3715]" started-at="2020-02-26T12:04:38Z" name="searchFrom" finished-at="2020-02-26T12:04:45Z" duration-ms="6699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchFrom -->
-        <test-method is-config="true" signature="tear()[pri:0, instance:Tests.EVA_FlightsPageTest@69930714]" started-at="2020-02-26T09:51:42Z" name="tear" finished-at="2020-02-26T09:51:42Z" duration-ms="89" status="PASS">
+        <test-method signature="searchTo()[pri:3, instance:Tests.EVA_FlightsPageTest@11dc3715]" started-at="2020-02-26T12:04:45Z" name="searchTo" finished-at="2020-02-26T12:04:51Z" duration-ms="6671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTo -->
+        <test-method is-config="true" signature="tear()[pri:0, instance:Tests.EVA_FlightsPageTest@11dc3715]" started-at="2020-02-26T12:04:51Z" name="tear" finished-at="2020-02-26T12:04:52Z" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear -->

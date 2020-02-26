@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\durga\AppData\Local\Temp\testng-eclipse--1670804387\testng-customsuite.xml</span>
+                    <span>C:\Users\shiba\AppData\Local\Temp\testng-eclipse-150179561\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,6 +108,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="Tests.EVA_FlightsPageTest" class="method navigator-link" hash-for-method="searchFrom">searchFrom</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.EVA_FlightsPageTest" class="method navigator-link" hash-for-method="searchTo">searchTo</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -142,12 +147,19 @@
                   <span class="method-name">searchFrom</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchTo">
+                  </a> <!-- searchTo -->
+                  <span class="method-name">searchTo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\durga\AppData\Local\Temp\testng-eclipse--1670804387\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shiba\AppData\Local\Temp\testng-eclipse-150179561\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -196,20 +208,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'searchFrom')
 data.setCell(0, 2, 'Tests.EVA_FlightsPageTest')
-data.setCell(0, 3, 9930);
+data.setCell(0, 3, 6699);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'defaultselection')
+data.setCell(1, 1, 'searchTo')
 data.setCell(1, 2, 'Tests.EVA_FlightsPageTest')
-data.setCell(1, 3, 3869);
+data.setCell(1, 3, 6671);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'defaultselection')
+data.setCell(2, 2, 'Tests.EVA_FlightsPageTest')
+data.setCell(2, 3, 3884);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -236,30 +252,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">Tests.EVA_FlightsPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
+              <div class="configuration-class before">
                 <span class="method-name">SetUp</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">defaultselection</span>
-                <span class="method-start">16297 ms</span>
+                <span class="method-start">15338 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear</span>
-                <span class="method-start">20168 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">SetUp</span>
-                <span class="method-start">20241 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchFrom</span>
-                <span class="method-start">35092 ms</span>
+                <span class="method-start">19233 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="test-method">
+                <span class="method-name">searchTo</span>
+                <span class="method-start">25935 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
                 <span class="method-name">tear</span>
-                <span class="method-start">45025 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">32609 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

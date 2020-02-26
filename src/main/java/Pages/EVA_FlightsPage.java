@@ -30,6 +30,11 @@ public class EVA_FlightsPage extends TestBase {
 	@FindBy(xpath = "//input[@class='box-shadow mat-autocomplete-trigger']")
 	WebElement fromSearch;
 	
+	@FindBy(xpath = "//input[@class='box-shadow mat-autocomplete-trigger']")
+	WebElement toSearch;
+	
+	
+	
 	
 	
 public EVA_FlightsPage() 
@@ -61,7 +66,7 @@ public boolean defaultSelection() {
 				
 }
 
-public void searchFlight(String keyword,String location) throws InterruptedException {
+public void searchFromFlight(String keyword,String location) throws InterruptedException {
 	
 	
 	from.click();
@@ -82,7 +87,31 @@ public void searchFlight(String keyword,String location) throws InterruptedExcep
 			
 			System.out.println("there is no location as such");
 		}
-	}
+	}}
+	
+	
+	public void searchToFlight(String keyword,String location) throws InterruptedException {
+		
+		
+		to.click();
+		Thread.sleep(1000);
+		toSearch.sendKeys(keyword);
+		Thread.sleep(1000);
+		List<WebElement> list=driver.findElements(By.xpath("//small[@class='d-inline cityairport-name px-2'] //span[@class='d-block cityname']"));
+		
+		for(WebElement srt:list) {
+			
+			if(srt.getText().contains(location)){
+				srt.click();
+				Thread.sleep(3000);
+				break;
+			}
+			
+			else {
+				
+				System.out.println("there is no location as such");
+			}
+		}
 	
 }
 	
