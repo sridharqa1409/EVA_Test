@@ -58,8 +58,9 @@ public class EVA_FlightsPageTest extends TestBase {
 
 	@AfterClass
 	public void tear() {
-
+        
 		driver.close();
+		driver =null;
 	}
 
 }

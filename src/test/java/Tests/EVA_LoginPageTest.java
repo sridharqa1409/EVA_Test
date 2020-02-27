@@ -51,7 +51,7 @@ public class EVA_LoginPageTest extends TestBase {
 
 	}
 
-	@Test(enabled = false, priority = 1, dataProvider = "getTestData")
+	@Test(priority = 1, dataProvider = "getTestData")
 	public void loginTest_Negative(String Username, String Password) throws InterruptedException {
 
 		LoginPage.login(Username, Password);
@@ -86,9 +86,9 @@ public class EVA_LoginPageTest extends TestBase {
 
 	@AfterMethod
 	public void teardown() {
-
+		
 		driver.close();
-
+		driver =null;
 	}
 
 }
