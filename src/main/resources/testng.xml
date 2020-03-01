@@ -4,8 +4,7 @@
 
 
 	<listeners>
-		<listener
-			class-name="ExtentReporterNG.ExtentReporterNG" />
+		<listener class-name="ExtentReporterNG.ExtentReporterNG" />
 	</listeners>
 
 

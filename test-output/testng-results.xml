@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-01T22:00:40 IST" name="Suite" finished-at="2020-03-01T22:03:54 IST" duration-ms="193776">
+  <suite started-at="2020-03-01T23:04:49 IST" name="Default suite" finished-at="2020-03-01T23:05:34 IST" duration-ms="44750">
     <groups>
     </groups>
-    <test started-at="2020-03-01T22:00:40 IST" name="Test1" finished-at="2020-03-01T22:03:18 IST" duration-ms="158348">
+    <test started-at="2020-03-01T23:04:49 IST" name="Default test" finished-at="2020-03-01T23:05:34 IST" duration-ms="44750">
       <class name="Tests.EVA_LoginPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:00:40 IST" name="SetUp" finished-at="2020-03-01T22:00:56 IST" duration-ms="16107" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@29176cc1]" started-at="2020-03-01T23:04:49 IST" name="SetUp" finished-at="2020-03-01T23:05:04 IST" duration-ms="14790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:00:56 IST" name="loginTest_Negative" data-provider="getTestData" finished-at="2020-03-01T22:01:02 IST" duration-ms="6463" status="PASS">
+        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@29176cc1]" started-at="2020-03-01T23:05:04 IST" name="loginTest_Negative" data-provider="getExcelTestData" finished-at="2020-03-01T23:05:11 IST" duration-ms="6452" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,167 +27,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest_Negative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:02 IST" name="teardown" finished-at="2020-03-01T22:01:03 IST" duration-ms="119" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@29176cc1]" started-at="2020-03-01T23:05:11 IST" name="teardown" finished-at="2020-03-01T23:05:11 IST" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:03 IST" name="SetUp" finished-at="2020-03-01T22:01:20 IST" duration-ms="17103" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@29176cc1]" started-at="2020-03-01T23:05:11 IST" name="SetUp" finished-at="2020-03-01T23:05:25 IST" duration-ms="14089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:20 IST" name="loginTest_Negative" data-provider="getTestData" finished-at="2020-03-01T22:01:26 IST" duration-ms="6607" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sridhar.moddu@fastcollab.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[myadmin@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest_Negative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:26 IST" name="teardown" finished-at="2020-03-01T22:01:26 IST" duration-ms="131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:26 IST" name="SetUp" finished-at="2020-03-01T22:01:42 IST" duration-ms="15439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:42 IST" name="loginTest_Negative" data-provider="getTestData" finished-at="2020-03-01T22:01:48 IST" duration-ms="6526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[test@fastcollab.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest_Negative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:48 IST" name="teardown" finished-at="2020-03-01T22:01:48 IST" duration-ms="102" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:01:48 IST" name="SetUp" finished-at="2020-03-01T22:02:04 IST" duration-ms="15341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:04 IST" name="loginTest_Negative" data-provider="getTestData" finished-at="2020-03-01T22:02:11 IST" duration-ms="6712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest_Negative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:11 IST" name="teardown" finished-at="2020-03-01T22:02:11 IST" duration-ms="114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:11 IST" name="SetUp" finished-at="2020-03-01T22:02:26 IST" duration-ms="15349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:26 IST" name="loginTest_Negative" data-provider="getTestData" finished-at="2020-03-01T22:02:33 IST" duration-ms="6498" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Myadmin@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest_Negative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:33 IST" name="teardown" finished-at="2020-03-01T22:02:33 IST" duration-ms="168" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:33 IST" name="SetUp" finished-at="2020-03-01T22:02:47 IST" duration-ms="14725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:47 IST" name="loginTest_Negative" data-provider="getTestData" finished-at="2020-03-01T22:02:54 IST" duration-ms="6711" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sridhar.moddu@fastcollab.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest_Negative -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:54 IST" name="teardown" finished-at="2020-03-01T22:02:54 IST" duration-ms="123" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:02:54 IST" name="SetUp" finished-at="2020-03-01T22:03:09 IST" duration-ms="15062" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="loginTest_Positive()[pri:2, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:03:09 IST" name="loginTest_Positive" finished-at="2020-03-01T22:03:18 IST" duration-ms="8801" status="PASS">
+        <test-method signature="loginTest_Positive()[pri:2, instance:Tests.EVA_LoginPageTest@29176cc1]" started-at="2020-03-01T23:05:25 IST" name="loginTest_Positive" finished-at="2020-03-01T23:05:34 IST" duration-ms="8706" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest_Positive -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@2928854b]" started-at="2020-03-01T22:03:18 IST" name="teardown" finished-at="2020-03-01T22:03:18 IST" duration-ms="85" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@29176cc1]" started-at="2020-03-01T23:05:34 IST" name="teardown" finished-at="2020-03-01T23:05:34 IST" duration-ms="143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Tests.EVA_LoginPageTest -->
-    </test> <!-- Test1 -->
-    <test started-at="2020-03-01T22:03:18 IST" name="Test2" finished-at="2020-03-01T22:03:54 IST" duration-ms="35363">
-      <class name="Tests.EVA_FlightsPageTest">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:Tests.EVA_FlightsPageTest@5e316c74]" started-at="2020-03-01T22:03:18 IST" name="SetUp" finished-at="2020-03-01T22:03:36 IST" duration-ms="18063" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUp -->
-        <test-method signature="defaultselection()[pri:1, instance:Tests.EVA_FlightsPageTest@5e316c74]" started-at="2020-03-01T22:03:36 IST" name="defaultselection" finished-at="2020-03-01T22:03:40 IST" duration-ms="4095" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- defaultselection -->
-        <test-method signature="searchFrom()[pri:2, instance:Tests.EVA_FlightsPageTest@5e316c74]" started-at="2020-03-01T22:03:40 IST" name="searchFrom" finished-at="2020-03-01T22:03:47 IST" duration-ms="6558" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchFrom -->
-        <test-method signature="searchTo()[pri:3, instance:Tests.EVA_FlightsPageTest@5e316c74]" started-at="2020-03-01T22:03:47 IST" name="searchTo" finished-at="2020-03-01T22:03:53 IST" duration-ms="6509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTo -->
-        <test-method is-config="true" signature="tear()[pri:0, instance:Tests.EVA_FlightsPageTest@5e316c74]" started-at="2020-03-01T22:03:53 IST" name="tear" finished-at="2020-03-01T22:03:54 IST" duration-ms="136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear -->
-      </class> <!-- Tests.EVA_FlightsPageTest -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

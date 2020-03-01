@@ -18,10 +18,10 @@ import TestBase.TestBase;
 
 public class UtilClass extends TestBase {
 
-	public static long PAGE_LOAD_TIMEOUT = 20;
-	public static long IMPLICIT_WAIT = 20;
+//	public static long PAGE_LOAD_TIMEOUT = 20;
+//	public static long IMPLICIT_WAIT = 20;
 
-	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/estData/TestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = System.getProperty("user.dir") + "/src/main/java/TestData/TestData.xlsx";
 
 	static Workbook book;
 	static Sheet sheet;
