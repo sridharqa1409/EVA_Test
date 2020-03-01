@@ -20,7 +20,7 @@ public class EVA_LoginPageTest extends TestBase {
 	public void SetUp() {
 
 		initBrowserAndGotoUrl(property.getProperty("Url"));
-		driver.manage().timeouts().pageLoadTimeout(30L, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		LoginPage = new EVA_LoginPage();
 	}
 
