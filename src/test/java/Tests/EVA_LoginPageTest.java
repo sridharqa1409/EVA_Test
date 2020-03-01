@@ -1,5 +1,6 @@
 package Tests;
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
@@ -36,7 +37,7 @@ public class EVA_LoginPageTest extends TestBase {
 	}
 
 	@Test(priority = 1, dataProvider = "getExcelTestData")
-	public void loginTest_Negative(String Username, String Password) throws InterruptedException {
+	public void loginTest_Negative(String Username, String Password) throws InterruptedException, IOException {
 
 		LoginPage.login(Username, Password);
 
@@ -46,7 +47,8 @@ public class EVA_LoginPageTest extends TestBase {
 
 		Assert.assertEquals(ActUrl, ExpUrl);
 
-		Thread.sleep(3000);
+		Thread.sleep(2000);
+		UtilClass.takeScreenshot();
 
 	}
 
