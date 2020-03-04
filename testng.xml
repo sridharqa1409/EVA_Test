@@ -3,17 +3,17 @@
 <suite name="Suite">
 
 
-  <test  name="first Test1">
+  <test  name="login Functionali_TS001">
     <classes>
       <class name="Tests.EVA_LoginPageTest"/>
     </classes>
   </test>
-  
   <test  name="first Test2">
     <classes>
       <class name="Tests.EVA_FlightsPageTest"/>
       
     </classes>
   </test>
+  
   
   </suite> 
