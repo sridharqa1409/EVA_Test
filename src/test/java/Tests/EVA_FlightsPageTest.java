@@ -1,5 +1,7 @@
 package Tests;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -36,13 +38,12 @@ public class EVA_FlightsPageTest extends TestBase {
 		boolean d1 = FlightsPage.defaultSelection();
 
 		Assert.assertTrue(d1);
-		//flightsPage.searchFlight();
+		
 
 	}
 	
 	@Test(priority = 2)
 	public void searchFrom() throws InterruptedException {
-		//LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
 		Thread.sleep(1000);
 		FlightsPage.searchFromFlight("che","Chennai");
 		
@@ -50,9 +51,24 @@ public class EVA_FlightsPageTest extends TestBase {
 	
 	@Test(priority = 3)
 	public void searchTo() throws InterruptedException {
-		//LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
+		
 		Thread.sleep(1000);
 		FlightsPage.searchToFlight("del","New Delhi");
+		
+	}
+	
+	@Test(priority = 4)
+	public void calender() throws InterruptedException {
+		
+		Thread.sleep(1000);
+		FlightsPage.calendar("July", "29");
+	}
+
+	@Test(priority = 5)
+	public void uiround() throws InterruptedException
+	{
+		boolean d1 = FlightsPage.roundtrip();
+		Assert.assertTrue(d1);
 		
 	}
 

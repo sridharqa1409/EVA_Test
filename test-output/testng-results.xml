@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
@@ -191,3 +192,10 @@
     </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
+>>>>>>> c11e8083391fbcd6cda34a875b98f2ca42820f54
