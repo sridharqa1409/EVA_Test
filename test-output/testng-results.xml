@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51076" started-at="2020-03-06T17:26:17 IST" finished-at="2020-03-06T17:27:08 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51076" started-at="2020-03-06T17:26:17 IST" finished-at="2020-03-06T17:27:08 IST">
+      <class name="Tests.EVA_FlightsPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_FlightsPageTest@76707e36]" name="SetUp" is-config="true" duration-ms="18235" started-at="2020-03-06T17:26:17 IST" finished-at="2020-03-06T17:26:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="defaultselection()[pri:1, instance:Tests.EVA_FlightsPageTest@76707e36]" name="defaultselection" duration-ms="3751" started-at="2020-03-06T17:26:35 IST" finished-at="2020-03-06T17:26:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defaultselection -->
+        <test-method status="PASS" signature="searchFrom()[pri:2, instance:Tests.EVA_FlightsPageTest@76707e36]" name="searchFrom" duration-ms="6340" started-at="2020-03-06T17:26:39 IST" finished-at="2020-03-06T17:26:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFrom -->
+        <test-method status="PASS" signature="searchTo()[pri:3, instance:Tests.EVA_FlightsPageTest@76707e36]" name="searchTo" duration-ms="10264" started-at="2020-03-06T17:26:45 IST" finished-at="2020-03-06T17:26:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTo -->
+        <test-method status="PASS" signature="calender()[pri:4, instance:Tests.EVA_FlightsPageTest@76707e36]" name="calender" duration-ms="2211" started-at="2020-03-06T17:26:56 IST" finished-at="2020-03-06T17:26:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calender -->
+        <test-method status="PASS" signature="uiround()[pri:5, instance:Tests.EVA_FlightsPageTest@76707e36]" name="uiround" duration-ms="10088" started-at="2020-03-06T17:26:58 IST" finished-at="2020-03-06T17:27:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uiround -->
+        <test-method status="PASS" signature="tear()[pri:0, instance:Tests.EVA_FlightsPageTest@76707e36]" name="tear" is-config="true" duration-ms="145" started-at="2020-03-06T17:27:08 IST" finished-at="2020-03-06T17:27:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear -->
+      </class> <!-- Tests.EVA_FlightsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
