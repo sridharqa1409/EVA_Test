@@ -61,14 +61,31 @@ public class EVA_FlightsPageTest extends TestBase {
 		Thread.sleep(1000);
 		FlightsPage.calendar("July", "29");
 	}
-
+	
 	@Test(priority = 5)
-	public void uiround() throws InterruptedException
-	{
-		boolean d1 = FlightsPage.roundtrip();
-		Assert.assertTrue(d1);
+	public void searchFlightButtonClicking() throws InterruptedException {
+		
+		Thread.sleep(1000);
+		FlightsPage.searchFlightButtonClick();
+	}
+	
+	@Test(priority = 6)
+
+	public void searchFlightResultPage() throws InterruptedException {
+		
+		Thread.sleep(7000);
+		
+		
 		
 	}
+	
+	
+	/*
+	 * @Test(priority = 6) public void uiround() throws InterruptedException {
+	 * boolean d1 = FlightsPage.roundtrip(); Assert.assertTrue(d1);
+	 * 
+	 * }
+	 */
 
 	@AfterClass
 	public void tear() {

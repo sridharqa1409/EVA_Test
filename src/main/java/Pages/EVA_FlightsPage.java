@@ -51,6 +51,29 @@ public class EVA_FlightsPage extends TestBase {
 	@FindBy(css = "[class='ui-state-default datepicker-content-d41d8cd98f00b204e9800998ecf8427e']")
 	WebElement date;
 	
+	@FindBy(xpath = "//div[@class='col-md-4 travellers-class fsw-inputbox'] //input[@type='text']")
+	WebElement travellers;
+	
+	@FindBy(xpath = "//label[@for='Economy']")
+	WebElement travelClassEconomy;
+	
+	@FindBy(xpath = "//label[@for='Premium Economy']")
+	WebElement travelClassPremiumEconomy;
+	
+
+	@FindBy(xpath = "//label[@for='Business']")
+	WebElement travelClassBusiness;
+	
+
+	@FindBy(xpath = "//label[@for='First Class']")
+	WebElement travelClassFirstClass;
+	
+	
+	
+	@FindBy(css = "[class='btn cta']")
+	WebElement searchFlightButton;
+	
+	
 public EVA_FlightsPage() 
 	
 	{
@@ -153,6 +176,21 @@ public void searchFromFlight(String keyword,String location) throws InterruptedE
 		}
 		
 	}
+	
+	public void travellersClass() {
+		
+		travellers.click();
+		travelClassEconomy.click();
+		
+	}
+	
+	
+	
+	public void searchFlightButtonClick() {
+		
+		searchFlightButton.click();
+	}
+	
 
 	public boolean roundtrip() throws InterruptedException {
 		
