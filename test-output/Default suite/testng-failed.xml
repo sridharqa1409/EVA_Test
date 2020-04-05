@@ -3,13 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.EVA_companySettingsTest">
-        <methods>
-          <include name="SetUp"/>
-          <include name="tear"/>
-          <include name="settings"/>
-        </methods>
-      </class> <!-- Tests.EVA_companySettingsTest -->
+
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
