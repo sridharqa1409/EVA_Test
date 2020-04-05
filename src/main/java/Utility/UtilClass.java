@@ -4,12 +4,18 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -58,10 +64,78 @@ public class UtilClass extends TestBase {
 		return data;
 	}
 
+	public static ArrayList<String> ReadData(String testcasename) throws IOException, InterruptedException {
+		 
+
+		ArrayList<String> a=new ArrayList<String>();
+		
+		FileInputStream fis=new FileInputStream("C://Users//Public//Downloads//TestData.xlsx");
+		XSSFWorkbook worbook=new XSSFWorkbook(fis);
+		int sheets=worbook.getNumberOfSheets();
+		for(int i=0;i<sheets;i++) {
+			
+		if(worbook.getSheetName(i).equalsIgnoreCase("Gilpin")) {
+			
+			XSSFSheet sheet=worbook.getSheetAt(i);
+			Iterator<Row> rows=sheet.iterator();
+			Row firstRow=rows.next();
+			Iterator<Cell> ce=firstRow.cellIterator();
+			int k=0;
+			int coloumn=0;
+			while(ce.hasNext()) {
+				
+				Cell value=ce.next();
+				if(value.getStringCellValue().equalsIgnoreCase("Testcases")) {
+					
+					coloumn=k;
+				}
+				
+				k++;
+			}
+			
+			while(rows.hasNext()) 
+			{
+				Row r=rows.next();
+				if(r.getCell(coloumn).getStringCellValue().equalsIgnoreCase(testcasename))
+				{
+					Iterator<Cell> cv=r.cellIterator();
+					while(cv.hasNext()) {
+						
+						a.add(cv.next().getStringCellValue());
+						
+						
+					}
+				}
+				
+			
+			}
+		}	
+		
+	  }
+		return a;
+		
+		
+	} 
+
+
+	
+	
+
 	public static void takeScreenshot() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	}
+			
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
-}

@@ -1,12 +1,13 @@
 package Pages;
 
+import java.awt.Desktop.Action;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 import TestBase.TestBase;
@@ -51,6 +52,29 @@ public class EVA_FlightsPage extends TestBase {
 	
 	@FindBy(css = "[class='ui-state-default datepicker-content-d41d8cd98f00b204e9800998ecf8427e']")
 	WebElement date;
+	
+	@FindBy(xpath = "//button[text()='Search Flights']")
+	WebElement searchflightbtn;
+	
+	@FindBy(xpath = "//div[@class='more-filter-options']")
+	WebElement filter;
+	
+	@FindBy(xpath = "//div[@class='time-section py-3 pr-3'] //div[@class='reset-section']")
+	WebElement Timereset;
+	
+	@FindBy(xpath = "//div[@class='stops-section py-3'] //div[@class='reset-section']")
+	WebElement stopsreset;
+	
+	@FindBy(xpath = "//div[@class='airlines-section py-3'] //div[@class='reset-section']")
+	WebElement airlinereset;
+	
+	@FindBy(xpath = "//div[@class='price-section py-3 pl-3'] //div[@class='reset-section']")
+	WebElement pricereset;
+	
+	@FindBy(xpath = "//div[@class='price-section py-3 pl-3'] //span[@class='ng5-slider-span ng5-slider-pointer ng5-slider-pointer-max']")
+	WebElement sliderleft;
+	
+	
 	
 public EVA_FlightsPage() 
 	
@@ -174,4 +198,27 @@ public void searchFromFlight(String keyword,String location) throws InterruptedE
 		
 	}
 	
+	public void searchFlightButton() throws InterruptedException {
+		
+		searchflightbtn.click();
+		
+		Thread.sleep(7000);
+		
+		
+	}
+	
+	public void searchFlightFilter() {
+		
+		filter.click();
+		Timereset.click();
+		stopsreset.click();	
+		airlinereset.click();
+		pricereset.click();
+		
+		Actions actions=new Actions(driver);
+		actions.dragAndDropBy(sliderleft, 58, 100).build().perform();
+		
+	}
+	
+	   
 }
