@@ -43,7 +43,7 @@ public class EVA_LoginPageTest extends TestBase {
 		String ExpUrl = driver.getCurrentUrl();
 		Assert.assertEquals(ActUrl, ExpUrl);
 		Thread.sleep(2000);
-		UtilClass.takeScreenshot();
+		//UtilClass.takeScreenshot();
 
 	}
 
