@@ -40,13 +40,9 @@ public class EVA_LoginPageTest extends TestBase {
 	public void loginTest_Negative(String Username, String Password) throws InterruptedException, IOException {
 
 		LoginPage.login(Username, Password);
-
 		String ActUrl = property.getProperty("Url");
-
 		String ExpUrl = driver.getCurrentUrl();
-
 		Assert.assertEquals(ActUrl, ExpUrl);
-
 		Thread.sleep(2000);
 		UtilClass.takeScreenshot();
 

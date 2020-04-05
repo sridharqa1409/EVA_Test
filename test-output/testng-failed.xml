@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.EVA_TaxSettingsTest">
+      <class name="Tests.EVA_LegalEntityTest">
         <methods>
+          <include name="gotoSettings"/>
+          <include name="tear"/>
           <include name="SetUp"/>
-          <include name="selectTaxSettings"/>
-          <include name="selectGstState"/>
         </methods>
-      </class> <!-- Tests.EVA_TaxSettingsTest -->
+      </class> <!-- Tests.EVA_LegalEntityTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

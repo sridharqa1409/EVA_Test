@@ -54,6 +54,9 @@ public class EVA_FlightsPage extends TestBase {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement SearchFlightsBtn;
 
+	@FindBy(xpath = "//div[@class='profile-section-drop-down']/img")
+	WebElement Profile;
+
 	public EVA_FlightsPage()
 
 	{
@@ -177,6 +180,12 @@ public class EVA_FlightsPage extends TestBase {
 	public void ClickSubmitFlights() {
 
 		SearchFlightsBtn.click();
+
+	}
+
+	public void GotoSettings() {
+
+		Profile.click();
 
 	}
 
