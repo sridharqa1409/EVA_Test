@@ -1,157 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="283256" started-at="2020-04-01T22:11:11 IST" finished-at="2020-04-01T22:15:55 IST">
+  <suite name="Default suite" duration-ms="175346" started-at="2020-04-05T18:35:10 IST" finished-at="2020-04-05T18:38:06 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="283256" started-at="2020-04-01T22:11:11 IST" finished-at="2020-04-01T22:15:55 IST">
-      <class name="Tests.EVA_LegalEntityTest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LegalEntityTest@76707e36]" name="SetUp" is-config="true" duration-ms="279092" started-at="2020-04-01T22:11:12 IST" finished-at="2020-04-01T22:15:51 IST">
+    <test name="Default test" duration-ms="175346" started-at="2020-04-05T18:35:10 IST" finished-at="2020-04-05T18:38:06 IST">
+      <class name="Tests.EVA_LoginPageTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="20090" started-at="2020-04-05T18:35:11 IST" finished-at="2020-04-05T18:35:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="FAIL" signature="gotoSettings()[pri:1, instance:Tests.EVA_LegalEntityTest@76707e36]" name="gotoSettings" duration-ms="51" started-at="2020-04-01T22:15:51 IST" finished-at="2020-04-01T22:15:51 IST">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QNMRRVK', ip: '192.168.43.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\sridh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 38d622d25d064cb76f977371dfbb6a2f
-*** Element info: {Using=xpath, value=//input[@id='emailAddress']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QNMRRVK', ip: '192.168.43.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\sridh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 38d622d25d064cb76f977371dfbb6a2f
-*** Element info: {Using=xpath, value=//input[@id='emailAddress']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy9.sendKeys(Unknown Source)
-at Pages.EVA_LoginPage.login(EVA_LoginPage.java:36)
-at Tests.EVA_LegalEntityTest.gotoSettings(EVA_LegalEntityTest.java:32)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method status="PASS" signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Negative" duration-ms="5841" started-at="2020-04-05T18:35:31 IST" data-provider="getExcelTestData" finished-at="2020-04-05T18:35:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@fastcollab.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yadmin@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- gotoSettings -->
-        <test-method status="FAIL" signature="tear()[pri:0, instance:Tests.EVA_LegalEntityTest@76707e36]" name="tear" is-config="true" duration-ms="4061" started-at="2020-04-01T22:15:51 IST" finished-at="2020-04-01T22:15:55 IST">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QNMRRVK', ip: '192.168.43.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\sridh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 38d622d25d064cb76f977371dfbb6a2f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
-  (Session info: chrome=80.0.3987.149)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-QNMRRVK', ip: '192.168.43.226', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\sridh\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:54072}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 38d622d25d064cb76f977371dfbb6a2f
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
-at Tests.EVA_LegalEntityTest.tear(EVA_LegalEntityTest.java:41)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
-at java.util.ArrayList.forEach(ArrayList.java:1257)
-at org.testng.TestRunner.privateRun(TestRunner.java:770)
-at org.testng.TestRunner.run(TestRunner.java:591)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-at org.testng.TestNG.runSuites(TestNG.java:1032)
-at org.testng.TestNG.run(TestNG.java:1000)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        </test-method> <!-- loginTest_Negative -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="86" started-at="2020-04-05T18:35:37 IST" finished-at="2020-04-05T18:35:37 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tear -->
-      </class> <!-- Tests.EVA_LegalEntityTest -->
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="18406" started-at="2020-04-05T18:35:37 IST" finished-at="2020-04-05T18:35:55 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Negative" duration-ms="5677" started-at="2020-04-05T18:35:55 IST" data-provider="getExcelTestData" finished-at="2020-04-05T18:36:01 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sridhar.moddu@fastcollab.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yadmin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_Negative -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="54" started-at="2020-04-05T18:36:01 IST" finished-at="2020-04-05T18:36:01 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="18484" started-at="2020-04-05T18:36:01 IST" finished-at="2020-04-05T18:36:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Negative" duration-ms="5639" started-at="2020-04-05T18:36:20 IST" data-provider="getExcelTestData" finished-at="2020-04-05T18:36:25 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[test@fastcollab.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Myadmin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_Negative -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="56" started-at="2020-04-05T18:36:25 IST" finished-at="2020-04-05T18:36:25 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="18469" started-at="2020-04-05T18:36:25 IST" finished-at="2020-04-05T18:36:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Negative" duration-ms="5599" started-at="2020-04-05T18:36:44 IST" data-provider="getExcelTestData" finished-at="2020-04-05T18:36:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Myadmin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_Negative -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="56" started-at="2020-04-05T18:36:49 IST" finished-at="2020-04-05T18:36:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="18520" started-at="2020-04-05T18:36:50 IST" finished-at="2020-04-05T18:37:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Negative" duration-ms="5589" started-at="2020-04-05T18:37:08 IST" data-provider="getExcelTestData" finished-at="2020-04-05T18:37:14 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_Negative -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="56" started-at="2020-04-05T18:37:14 IST" finished-at="2020-04-05T18:37:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="18434" started-at="2020-04-05T18:37:14 IST" finished-at="2020-04-05T18:37:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest_Negative(java.lang.String, java.lang.String)[pri:1, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Negative" duration-ms="5699" started-at="2020-04-05T18:37:32 IST" data-provider="getExcelTestData" finished-at="2020-04-05T18:37:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sridhar.moddu@fastcollab.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_Negative -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="67" started-at="2020-04-05T18:37:38 IST" finished-at="2020-04-05T18:37:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="SetUp" is-config="true" duration-ms="18815" started-at="2020-04-05T18:37:38 IST" finished-at="2020-04-05T18:37:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="loginTest_Positive()[pri:2, instance:Tests.EVA_LoginPageTest@1f554b06]" name="loginTest_Positive" duration-ms="8751" started-at="2020-04-05T18:37:57 IST" finished-at="2020-04-05T18:38:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest_Positive -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Tests.EVA_LoginPageTest@1f554b06]" name="teardown" is-config="true" duration-ms="56" started-at="2020-04-05T18:38:05 IST" finished-at="2020-04-05T18:38:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Tests.EVA_LoginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

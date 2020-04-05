@@ -29,9 +29,8 @@ public class EVA_LoginPageTest extends TestBase {
 
 	@DataProvider
 	public Object[][] getExcelTestData() {
-
+		
 		Object[][] data = UtilClass.getTestData("LoginTestData");
-
 		return data;
 
 	}
@@ -52,15 +51,10 @@ public class EVA_LoginPageTest extends TestBase {
 	public void loginTest_Positive() throws InterruptedException {
 
 		WebElement ele = LoginPage.login(property.getProperty("Username"), property.getProperty("Password"));
-
 		Thread.sleep(2000);
-
 		Assert.assertTrue(ele.isDisplayed());
-
 		WebElement dft = LoginPage.defaultpage();
-
 		Assert.assertTrue(dft.isSelected());
-
 	}
 
 	@AfterMethod
